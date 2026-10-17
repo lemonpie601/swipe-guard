@@ -3,13 +3,18 @@
   display: none !important;
 }
 
-.mscx-btn {
+/* 커스텀 테마가 아이콘 버튼 폭을 1rem으로 고정하면(:root .mari-message-actions button)
+   1/3 글자가 옆 아이콘으로 넘친다. 그보다 강한 선택자로 폭을 글자에 맞추고 양옆에 여백을 둔다. */
+:root .mari-message-actions > button.mscx-btn.mscx-btn {
   position: relative;
-  gap: 0.15rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem !important;
   width: auto !important;
-  min-width: 2.25rem;
-  margin-left: 0.15rem;
-  padding: 0 0.35rem !important;
+  min-width: max-content !important;
+  margin: 0 0.4rem !important;
+  padding: 0 0.15rem !important;
+  overflow: visible;
 }
 
 .mscx-btn svg {
