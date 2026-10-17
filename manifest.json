@@ -1,0 +1,13 @@
+{
+  "kind": "marinara.personal-extension",
+  "version": 1,
+  "config": {
+    "name": "스와이프 가드",
+    "version": "1.0.0",
+    "description": "AI 응답의 < 1/1 > 스와이프 바를 하단 아이콘 줄의 작은 아이콘으로 옮기고, 재응답 전에 확인 창을 띄워요.",
+    "runtime": "client",
+    "capabilities": ["full_page_access"],
+    "jsPath": "extension.js",
+    "cssPath": "extension.css"
+  }
+}
